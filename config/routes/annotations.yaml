@@ -1,0 +1,7 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+Admin:
+    resource: ../../src/Controller/Admin
+    type: annotation
+    prefix:   /admin
