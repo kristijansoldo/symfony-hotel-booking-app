@@ -5,6 +5,9 @@ Simple hotel booking app in PHP MVC framework called Symfony. :)
 - Symfony 4.3.1
 - MySQL 5.6.3
 - PHP 7.1.25 - fpm
+- Node v8.9.0
+- SB Admin 2
+- Bootstrap 4.3
 
 ## Development
 
@@ -22,16 +25,33 @@ $ composer install
 $ symfony server:start
 ```
 
-- Run migrations
+- Run migrations:
 
 ```shell
 $ php bin/console doctrine:migrations:migrate
 ```
 
-- Load fixtures
+- Load fixtures:
 
 ```shell
 $ php bin/console doctrine:fixtures:load
+```
+
+- Install node modules:
+
+```shell
+$ yarn install
+```
+
+- Run yarn watch:
+
+```shell
+$ yarn encore dev --watch
+```
+
+or just compile once:
+```shell
+$ yarn encore dev
 ```
 
 
