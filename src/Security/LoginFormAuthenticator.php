@@ -167,7 +167,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
         }
 
         // Redirect after login
-        return new RedirectResponse($this->urlGenerator->generate('admin_login'));
+        return new RedirectResponse($this->urlGenerator->generate('admin_dashboard'));
     }
 
     /**
