@@ -2,4 +2,18 @@
 
 {% block title %}{% endblock %}
 
-{% block body %}{% endblock %}
+{% block body %}
+    <div id="wrapper">
+        {% include 'admin/views/components/sidebar.html.twig' %}
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                {% include 'admin/views/components/navbar.html.twig' %}
+                {% block content %}{% endblock %}
+            </div>
+            {% include 'admin/views/components/footer.html.twig' %}
+        </div>
+        {% include 'admin/views/components/scroll-to-top-btn.html.twig' %}
+        {% include 'admin/views/components/logout-modal.html.twig' %}
+    </div>
+{% endblock %}
